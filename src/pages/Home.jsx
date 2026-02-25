@@ -65,7 +65,7 @@ export default function Home() {
       {/* HERO */}
       <section id="top" className="hero">
         <video className="heroVideo" autoPlay muted loop playsInline poster="/hero.jpg">
-          <source src="../../public/video/TRAVEL.mp4" type="video/mp4" />
+          <source src="/video/TRAVEL.mp4" type="video/mp4" />
         </video>
 
         <div className="heroImageFallback" />
