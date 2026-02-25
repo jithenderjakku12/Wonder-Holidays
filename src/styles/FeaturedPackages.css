@@ -1,0 +1,75 @@
+.rowTop{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.packGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.pack{
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.pack:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.packImg{
+  height: 190px;
+  background: linear-gradient(135deg, rgba(255,122,0,0.18), rgba(11,60,93,0.10));
+  position: relative;
+}
+
+.packTag{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid #e5e7eb;
+  font-weight: 900;
+  color: #0B3C5D;
+  font-size: 12px;
+}
+
+.packBody{
+  padding: 12px;
+}
+
+.packTitle{
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.packMeta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.packPrice{
+  color: #FF7A00;
+  font-weight: 900;
+}
+
+.packLink{
+  text-decoration: none;
+  font-weight: 900;
+  color: #0B3C5D;
+}
+
+@media (max-width: 1100px){
+  .packGrid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px){
+  .packGrid{ grid-template-columns: 1fr; }
+}

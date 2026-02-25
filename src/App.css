@@ -1,0 +1,14 @@
+/* src/App.css */
+
+/* ✅ Remove Vite default boxed layout */
+html, body, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ App wrapper should not force center text */
+#root {
+  max-width: none;
+  text-align: initial;
+}

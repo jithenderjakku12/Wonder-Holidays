@@ -1,0 +1,50 @@
+.travelFxLayer{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.fxIcon{
+  position: absolute;
+  width: 70px;
+  height: auto;
+  opacity: 0.18;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+  filter: blur(0.2px);
+}
+
+/* Top-Left -> Bottom-Right */
+.path-tlbr{
+  left: -120px;
+  top: -120px;
+  animation: tlbrMove 18s linear infinite;
+}
+@keyframes tlbrMove{
+  from{ transform: translate3d(0,0,0); }
+  to  { transform: translate3d(calc(100vw + 240px), calc(100vh + 240px), 0); }
+}
+
+/* Bottom-Right -> Top-Left */
+.path-brtl{
+  right: -120px;
+  bottom: -120px;
+  animation: brtlMove 22s linear infinite;
+}
+@keyframes brtlMove{
+  from{ transform: translate3d(0,0,0); }
+  to  { transform: translate3d(calc(-100vw - 240px), calc(-100vh - 240px), 0); }
+}
+
+/* Left -> Right */
+.path-lr{
+  left: -120px;
+  top: 60vh;
+  animation: lrMove 16s linear infinite;
+}
+@keyframes lrMove{
+  from{ transform: translate3d(0,0,0); }
+  to  { transform: translate3d(calc(100vw + 240px), 0, 0); }
+}

@@ -1,0 +1,39 @@
+.blogGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.post{
+  overflow: hidden;
+}
+
+.postImg{
+  height: 170px;
+  background: linear-gradient(135deg, rgba(255,122,0,0.18), rgba(11,60,93,0.10));
+}
+
+.postBody{ padding: 12px; }
+
+.postDate{
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 800;
+}
+
+.postTitle{
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+.postLink{
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  color: #0B3C5D;
+}
+
+@media (max-width: 900px){
+  .blogGrid{ grid-template-columns: 1fr; }
+}

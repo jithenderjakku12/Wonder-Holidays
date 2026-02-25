@@ -1,0 +1,33 @@
+.aboutWrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.aboutMedia{ padding: 12px; }
+.aboutMediaPh{
+  height: 320px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e5e7eb;
+  background: linear-gradient(135deg, rgba(11,60,93,0.10), rgba(255,122,0,0.12));
+  font-weight: 900;
+  color: #0B3C5D;
+}
+
+.aboutText{ padding: 6px 0; }
+
+.aboutList{
+  margin: 0 0 16px;
+  padding-left: 18px;
+  color: #374151;
+}
+
+.aboutList li{ margin: 8px 0; }
+
+@media (max-width: 900px){
+  .aboutWrap{ grid-template-columns: 1fr; }
+  .aboutMediaPh{ height: 240px; }
+}

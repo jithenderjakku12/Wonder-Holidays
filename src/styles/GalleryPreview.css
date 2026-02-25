@@ -1,0 +1,14 @@
+.galGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.gal{
+  height: 180px;
+  background: linear-gradient(135deg, rgba(11,60,93,0.10), rgba(255,122,0,0.12));
+}
+
+@media (max-width: 900px){
+  .galGrid{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,26 @@
+.promo{
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(11,60,93,0.06), rgba(255,122,0,0.08));
+}
+
+.promoRight{
+  display: grid;
+  gap: 10px;
+  align-content: center;
+}
+
+.pill{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-weight: 800;
+  color: #0B3C5D;
+}
+
+@media (max-width: 900px){
+  .promo{ grid-template-columns: 1fr; }
+}
